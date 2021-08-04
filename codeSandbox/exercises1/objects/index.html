@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Objects 1: Introduction and Syntax</h1>
+      <h2>Representing Life as Objects</h2>
+      <p>
+        Software developers are paid to represent real-world things and
+        processes in code. To represent things like people, tools, animals,
+        flowers, businesses, and financial transactions, we use objects.
+      </p>
+      <p>
+        You can identify an object in JavaScript by a series of properties
+        surround by curly braces { and } Here's a simple object that represents
+        this chapter..
+      </p>
+      <pre><code>const objectsIntro = {
+    site: "codesandbox.io",
+    subject: "Objects",
+    chapter: "Introduction and Syntax",
+    audience: "Beginners",
+    minutesToComplete: 4.25
+}</code></pre>
+      <p>
+        A property on an object is comprised of a key and a value. You can think
+        of them just like declaring a variable, but the syntax is slightly
+        different, and the variable is now grouped together with other ones in
+        the context of the object.
+      </p>
+      <pre><code>// Regular variable declarations
+const firstName = "Michael"
+const lastName = "McLenton"
+const age = 25
+const city = "Nashville"
+
+// Same variables scoped to an object
+const michael = {
+    firstName: "Michael",
+    lastName: "McLenton",
+    age: 25,
+    city: "Nashville"
+}</code></pre>
+      <p>
+        You've replaced the = sign with a colon : for assigning a value to a
+        variable. When a variable is defined this way - in the scope of an
+        object - it's called a property. The variable name is now now called a
+        key. The value is still called value.
+      </p>
+      <p>
+        Here is an example of representing a book as an object in JavaScript.
+      </p>
+      <pre><code>const book = {
+    title: "Where the Wild Things Are",
+    isbn: "0-06-025492-0",
+    publisher: "Harper & Row",
+    publicationDate: "1963",
+    pages: 40
+}</code></pre>
+      <p>
+        You can put as many properties on an object as you need to appropriately
+        describe that object, and what you need to display to people who are
+        viewing the information.
+      </p>
+      <h2>Exercise: Your First Object</h2>
+      <p>
+        In the code editor, you will see some starter code. You only need to
+        focus on the following code.
+      </p>
+      <pre><code>/* Create your student object here  */
+const student = </code></pre>
+      <p>
+        After the <b>student =</b> your job is to create an object that
+        represents a new student who is learning how to write software. The
+        student should have the following properties..
+      </p>
+      <ul>
+        <li>A name property with a value of "Jeremy Landy"</li>
+        <li>A location property with a value of "Phoenix, AR"</li>
+        <li>A gender property with value of "male"</li>
+        <li>An age property with a value of 31</li>
+      </ul>
+      <p>
+        So you need the curly braces, and the properties. Leave the rest of the
+        code unchanged.
+      </p>
+      <h2>Try it out!</h2>
+      <p>
+        Down below this you'll see two tabs: <b>Console</b> and <b>Problems</b>.
+        We're going to only pay attention to the <b>Console</b> tab for now, so
+        go ahead and open that up and let's start writing some JavaScript! 😄
+      </p>
+      <h3>👇 Click this link when we're done! 👇</h3>
+      <a
+        href="https://codesandbox.io/s/functions-intro-1-introduction-and-syntax-uq5xf?file=/src/index.js"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Next exercise! 💪</a
+      >
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

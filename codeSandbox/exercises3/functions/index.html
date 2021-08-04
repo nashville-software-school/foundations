@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Functions Intro 3: Return to Sender</h1>
+      <h2>Preface: Naming Things is Hard</h2>
+      <p>
+        Software developers often define many variables while they are passing
+        data around in their code. Sometimes it can be daunting to come up with
+        good variable names to store those values. Even in this introductory
+        exercise, you will need to declare and use variables 5 or 6 times.
+      </p>
+      <p>It gets confusing.</p>
+      <p>
+        The best advice is to name a variable that corresponds to it value. For
+        example, if you have a number that needs to be passed to a function as
+        an argument. What does that number represent?
+      </p>
+      <p>
+        If it's the age of a person, a great name for the variable would be
+        <b>age</b> or <b>personAge</b>.
+      </p>
+      <p>
+        If it's just a number that has no other context, it's perfectly fine to
+        name the variable <b>number</b>, <b>firstNumber</b>, or
+        <b>originalNumber</b>
+      </p>
+      <p>
+        <u><b>Reminder:</b></u>
+        <i
+          >JavaScript doesn't care at all what your variable names are. In fact,
+          it ignores them completely. All JavaScript cares about is the value of
+          the variable. Variables are for the other humans reading your code.</i
+        >
+      </p>
+      <p>
+        In the following code, you may be tempted to say that you are "logging
+        color to the console". You are not. You are logging the string of "red"
+        to the console.
+      </p>
+      <pre><code>const color = "red"
+
+console.log(color)</code></pre>
+      <h2>Functions that Give Back</h2>
+      <p>
+        In the introduction, you invoked a function that had a single parameter
+        so that you could fill up a car's gas tank with any specified number of
+        gallons. The function itself defined a very basic task that just wrote a
+        message to the console. This is usually not the case.
+      </p>
+      <p>
+        Most of the time, functions actually give you something back after the
+        task is complete. This is because software developers use functions to
+        define transformation or calculation tasks. That sounds fancy, but it's
+        not.
+      </p>
+      <p>Here's a simple example.</p>
+      <h2>Half the Number</h2>
+      <p>
+        Sometimes your brain just forgets all the math that it learned in high
+        school and college. Finding what half of a number is sometimes beyond
+        your capabilities, especially if you haven't had coffee yet.
+      </p>
+      <p>
+        You decide to write a function that performs the task for you. A little
+        Math Minion.
+      </p>
+      <p>
+        You tell the minion what number needs to be provided. That's a
+        parameter.
+      </p>
+      <pre><code>const findHalf = (scaryNumber) => {
+    // Use the slash character to divide in JavaScript
+    const half = scaryNumber / 2
+}</code></pre>
+      <p>
+        So far, the minion did its job, but it never told you what the end
+        result is!!
+      </p>
+      <p>Bad minion.</p>
+      <p>
+        You need to provide instructions to the minion to tell you what the
+        answer is. You use the <b>return</b> keyword for that.
+      </p>
+      <pre><code>const findHalf = (scaryNumber) => {
+    // Use the slash character to divide in JavaScript
+    const half = scaryNumber / 2
+
+    // Tell me the end result
+    return half
+}</code></pre>
+      <p>
+        Now when the task is complete, the minion will hand you the end result
+        of its hard work. It <b>returns</b> something to you. When a function
+        returns a value, you must store that value in a variable. Remember that
+        variables store values, including ones that functions return.
+      </p>
+      <pre><code>const returnedNumber = findHalf(42)
+
+console.log(returnedNumber)
+
+> 21</code></pre>
+      <h2>Write this Down. Read it Often.</h2>
+      <p>
+        There's a mantra that you need to remember when working with functions.
+        It will save you heartache in the future.
+      </p>
+      <p>
+        <b
+          >If a function returns a value, you must store that value in a
+          variable</b
+        >
+      </p>
+      <p>
+        You will practice this mechanism many times because this flow of data
+        and syntax is not natural to understand or remember. It is, however,
+        crucial to build into your muscle memory until it does make sense.
+      </p>
+      <p>
+        <b
+          >If a function returns a value, you must store that value in a
+          variable</b
+        >
+      </p>
+      <h2>Practice: Cut into Pieces</h2>
+      <p>
+        You have some starter code for a function named
+        <b><i>quarterValue()</i></b
+        >. It will work very similarly to the <b><i>findHalf()</i></b> function
+        shown above. What you need to do is complete the following tasks:
+      </p>
+      <ol>
+        <li>
+          In the function, define a parameter that will hold the value of the
+          original number.
+        </li>
+        <li>In the function, divide that number by 4.</li>
+        <li>In the function, return the quartered number.</li>
+        <li>
+          On the line of code where the function is invoked, store the returned
+          number in a variable.
+        </li>
+        <li>
+          Plug that variable into the parenthesis for the
+          <b><i>console.log()</i></b>
+        </li>
+        <li>
+          When you run the code, you should see the answer in the console.
+        </li>
+      </ol>
+      <h2>Try it out!</h2>
+      <p>
+        Down below this you'll see two tabs: <b>Console</b> and <b>Problems</b>.
+        We're going to only pay attention to the <b>Console</b> tab for now, so
+        go ahead and open that up and let's start writing some JavaScript! 😄
+      </p>
+      <p>👇👇👇</p>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

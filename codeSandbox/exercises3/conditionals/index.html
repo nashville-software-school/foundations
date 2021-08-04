@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Conditionals 3: Switch Statements</h1>
+      <h2>Many Possible Values</h2>
+      <p>
+        So far you've worked with boolean values. A variable has a value of true
+        or false. Many times, though, a variable can have many possible values.
+        Consider that you want to do a different task depending on what day of
+        the week it is. You would create a variable named
+        <b>dayOfTheWeek</b> that will contain one of seven possible values.
+        Depending on which day, you want to be reminded which daily task you
+        want to perform
+      </p>
+      <p>
+        A <b>switch</b> statement in JavaScript is perfect for this. Otherwise
+        you would need to create seven different <b>if/then</b> statements.
+      </p>
+      <pre><code>
+const dayOfTheWeek = "Tuesday";
+
+// The switch statement is followed by the variable that should be
+// evaluated. Then, the case statement that corresponds to the variable's
+// value will be executed.
+
+switch (dayOfTheWeek) {
+    case "Monday":
+        console.log("Vacuum the downstairs");
+        break;
+
+    case "Tuesday":
+        console.log("Take out the trash");
+        break;
+
+    case "Wednesday":
+        console.log("Go to pottery class");
+        break;
+
+    case "Thursday":
+        console.log("Take the kids to swimming practice");
+        break;
+
+    case "Friday":
+        console.log("Order pizza for family night");
+        break;
+
+    case "Saturday":
+        console.log("Buy groceries");
+        break;
+
+    case "Sunday":
+        console.log("Do the crossword puzzle");
+        break;
+}</code></pre>
+    </div>
+    <h2>Try it out!</h2>
+    <p>
+      Down below this you'll see two tabs: <b>Console</b> and <b>Problems</b>.
+      We're going to only pay attention to the <b>Console</b> tab for now, so go
+      ahead and open that up and let's start writing some JavaScript!
+    </p>
+    <p>👇👇👇</p>
+
+    <h3>👇 Click this link when we're done! 👇</h3>
+    <a
+      href="https://codesandbox.io/s/iteration-3-using-the-power-of-of-irq8i?file=/src/index.js"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Next exercise! 💪</a
+    >
+    <script src="src/index.js"></script>
+  </body>
+</html>

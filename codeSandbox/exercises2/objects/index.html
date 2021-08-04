@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Objects 2: Flower Shop</h1>
+      <h2>Multiple Objects</h2>
+      <p>
+        Since software developers utilize objects to represent real-world things
+        that need to be automated with software, it is critical to know that the
+        properties of the "things" are. Consider an example where a fire chief
+        needs to assign some firefighters to fire stations. What would need to
+        be an object in this scenario.
+      </p>
+      <ol>
+        <li>An object representing each firefighter</li>
+        <li>An object representing each fire station</li>
+        <li>An object representing the fire chief</li>
+      </ol>
+      <p>First, the fire chief</p>
+      <pre><code>const fireChief = {
+    firstName: "Samantha",
+    lastName: "Robinson",
+    yearsOfService: 13,
+    emtCertification: true,
+    paramediaCertification: true,
+    firefighterCertification: true
+}</code></pre>
+      <p>Now some firefighters.</p>
+      <pre><code>const matthew = {
+    firstName: "Matthew",
+    lastName: "Ingersoll",
+    yearsOfService: 4,
+    emtCertification: false,
+    paramediaCertification: true,
+    firefighterCertification: true
+}
+
+const jamal = {
+    firstName: "Jamal",
+    lastName: "Ross",
+    yearsOfService: 5,
+    emtCertification: true,
+    paramediaCertification: false,
+    firefighterCertification: true
+}
+
+const erin = {
+    firstName: "Erin",
+    lastName: "McNamara",
+    yearsOfService: 3,
+    emtCertification: false,
+    paramediaCertification: true,
+    firefighterCertification: true
+}</code></pre>
+      <p>Now, two objects for the fire stations.</p>
+      <pre><code>const eastStation = {
+    address: "1002 Main Street",
+    squareFootage: 4720,
+    kitchen: true,
+    beds: true,
+    showers: true
+}
+
+const northStation = {
+    address: "9 Lighthouse Road",
+    squareFootage: 3233,
+    kitchen: false,
+    beds: false,
+    showers: true
+}</code></pre>
+      <h2>Different Properties</h2>
+      <p>
+        Some of the objects represent the people, and some objects represent
+        buildings. Therefore, the properties vary. Each JavaScript object should
+        have only the properties that describe the real-world object it is
+        representing. The value of each property can be different, depending on
+        the current state of the real-world object. Just because two objects
+        represent the same kind of thing does not mean the property values will
+        always match.
+      </p>
+      <h2>Exercise: Flower Shop</h2>
+      <p>
+        In this exercise, you are going to create two objects that represent
+        flowers - a Tulip and a Rose. The objects will be largely the same, but
+        since roses have thorns and tulips do not, there will be a difference
+        between the properties on each one.
+      </p>
+      <p>
+        In the starter code in the editor, create two objects where you see the
+        comments.
+      </p>
+      <p>Both flower objects should have the following keys.</p>
+      <ul>
+        <li>
+          <b>color</b> which will be a <span class="string">string</span>,
+        </li>
+        <li>
+          <b>stemLength</b> which will be a <span class="number">number</span>,
+        </li>
+        <li>
+          <b>growingSeason</b> which will be a string like
+          <span class="string">"Summer"</span> or
+          <span class="string">"Spring"</span>,
+        </li>
+        <li>
+          <b>thorny</b> will be be a boolean value of
+          <span class="bool">true</span> or <span class="bool">false</span>.
+        </li>
+      </ul>
+      <h2>Try it out!</h2>
+      <p>
+        Down below this you'll see two tabs: <b>Console</b> and <b>Problems</b>.
+        We're going to only pay attention to the <b>Console</b> tab for now, so
+        go ahead and open that up and let's start writing some JavaScript! 😄
+      </p>
+      <p>👇👇👇</p>
+
+      <h3>👇 Click this link when we're done! 👇</h3>
+      <a
+        href="https://codesandbox.io/s/functions-intro-2-paint-the-house-e7dj1?file=/src/index.js"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Next Exercise! 💪
+      </a>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

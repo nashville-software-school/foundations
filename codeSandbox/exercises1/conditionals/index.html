@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parcel Sandbox</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./src/styles.css" />
+    </head>
+
+    <body>
+        <div class="app">
+            <h1>Conditionals 1: Single Conditions</h1>
+            <h2>Conditions</h2>
+            <p>
+                Conditions are used by software developers when the value of a
+                variable can be one of many possible ones, and the instructions
+                to follow will be different given a certain value. Much like the
+                decisions that you make on a daily basis, you decide to do
+                something different when there are certain conditions.
+            </p>
+            <p>
+                If you are hungry, and you are driving by yourself, you decide
+                to eat quickly at a fast food restaurant.
+            </p>
+            <p>
+                However, if you have your family with you, you decide to eat at
+                a casual dining restaurant.
+            </p>
+            <p>
+                For a software developer, this kind of everyday logic would look
+                like this:
+            </p>
+            <pre><code>
+const numberOfPassengers = 4;
+
+if (numberOfPassengers > 1) {
+  // Condition evaluated true
+  console.log("We will eat at Sushi Tomo tonight.");
+} else {
+  // Condition evaluated false
+  console.log("I will eat at Burger King tonight.");
+}
+                </code>
+            </pre>
+            <p>
+                Variables can also hold what's called a boolean value. A boolean
+                value is either true or false. This is different than a string.
+            </p>
+            <p><span class="string">"true"</span> is a string value.</p>
+            <p><span class="bool">true</span> is a boolean value.</p>
+            <pre><code>
+const learningCodeIsHard = true;
+
+if (learningCodeIsHard === true) {
+    console.log("Research and ask for help");
+} else {
+    console.log("You need to find harder problems to solve.");
+}
+            </code></pre>
+            <h2>Try it out!</h2>
+            <p>
+                Down below this you'll see two tabs: <b>Console</b> and
+                <b>Problems</b>. We're going to only pay attention to the
+                <b>Console</b> tab for now, so go ahead and open that up and
+                let's start writing some JavaScript! 😄
+            </p>
+            <h3>👇 Click this link when we're done! 👇</h3>
+            <a
+                href="https://codesandbox.io/s/iteration-1-simple-iteration-of-a-collection-pmhmy?file=/src/index.js"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Next exercise! 💪</a
+            >
+        </div>
+
+        <script src="./src/index.js"></script>
+    </body>
+</html>

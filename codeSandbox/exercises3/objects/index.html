@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Objects 3: Doctor Office Schedule</h1>
+      <h2>Object Collections</h2>
+      <p>
+        In previous work in the prework sessions, you learned how to store a
+        collection of related data in an array and how to use iteration to do
+        something with everything in the array.
+      </p>
+      <p>
+        Example, an array of your teammates's names can be joined together using
+        a for..of loop, which iterates the array.
+      </p>
+      <pre><code>// Array of strings
+const names = ["Jameka", "Rose", "Martin", "Greg", "Mary"]
+
+// Blank string
+let team = ""
+
+// Iterate teammate name array
+for (const name of names) {
+
+    // Append to the team variable's value
+    team += `Teammate: ${name}\n`
+}
+
+console.log(team)
+
+/* OUTPUT:
+    Teammate: Jameka
+    Teammate: Rose
+    Teammate: Martin
+    Teammate: Greg
+    Teammate: Mary
+*/</code></pre>
+      <p>In this exercise, you will be working with an array of objects.</p>
+      <p>
+        Using the same kind of logic that was in the example above, you can
+        replace the string values in the array with objects that represent each
+        teammate. It's still a collection of your teammates, but instead of
+        simple string representations of each person, you now have object
+        representations.
+      </p>
+      <pre><code>// Array of objects
+const teammateArray = [
+    {
+        firstName: "Jameka",
+        lastName: "Williams"
+    },
+    {
+        firstName: "Rose",
+        lastName: "McCallister",
+    },
+    {
+        firstName: "Martin",
+        lastName: "Orodruin"
+    },
+    {
+        firstName: "Greg",
+        lastName: "Killgrew"
+    },
+    {
+        firstName: "Mary",
+        lastName: "Thomas"
+    }
+]
+
+// Blank string
+let team = ""
+
+// Iterate teammate name array
+for (const teammateObject of teammateArray) {
+
+    // Append to the team variable's value.
+    // Use dot notation to access properties on objects.
+    team += `Teammate: ${teammateObject.firstName} ${teammateObject.lastName}\n`
+}
+
+console.log(team)
+
+/* OUTPUT:
+    Teammate: Jameka Williams
+    Teammate: Rose McCallister
+    Teammate: Martin Orodruin
+    Teammate: Greg Killgrew
+    Teammate: Mary Thomas
+*/</code></pre>
+      <p><b>Line Breaks in Strings</b></p>
+      <p>
+        In the code above, if you look at the end of the string template, you
+        will notice two characters: a backslash and the letter n.
+      </p>
+      <pre><code>team += `Teammate: ${teammateObject.firstName} ${teammateObject.lastName}\n`</code></pre>
+      <p>
+        Those two characters create a new line in the string. This allows you to
+        have the output shown above, where each teammate is on a new line
+        instead of one, continuous string.
+      </p>
+      <h2>Exercise: Doctor's Office Schedule</h2>
+      <p>
+        The office manager of a doctor's office wants to provide a list each day
+        that shows the name of each patient, and the time of their appointment.
+        An array of objects is provided with some same patients represented an
+        objects. Write a for..of loop that iterates the objects in the array,
+        and then use dot notation to append the patient's full name, and the
+        time of their appointment to the string value of the schedule variable.
+      </p>
+      <p>
+        <b
+          >Example output (yours will look different because the data is
+          different)</b
+        >
+      </p>
+      <p><i>Patient Nancy Johnson has an appointment at 9:30</i></p>
+      <p><i>Patient Clarrissa Ford has an appointment at 10:15</i></p>
+      <p><i>Patient Abigail Debrowski has an appointment at 11:00</i></p>
+      <p><i>Patient John Beury has an appointment at 1:20</i></p>
+      <p>
+        <b
+          >Note: Make sure you use \n at the end of your string templates to
+          make each appointment on its own line</b
+        >
+      </p>
+      <h2>Try it out!</h2>
+      <p>
+        Down below this you'll see two tabs: <b>Console</b> and <b>Problems</b>.
+        We're going to only pay attention to the <b>Console</b> tab for now, so
+        go ahead and open that up and let's start writing some JavaScript! 😄
+      </p>
+      <p>👇👇👇</p>
+
+      <h3>👇 Click this link when we're done! 👇</h3>
+      <a
+        href="https://codesandbox.io/s/functions-intro-3-return-to-sender-ihwlb?file=/src/index.js"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Next exercise! 💪</a
+      >
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

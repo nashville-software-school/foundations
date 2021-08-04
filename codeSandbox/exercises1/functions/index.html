@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Functions Intro 1: Introduction and Syntax</h1>
+      <h2>Functions</h2>
+      <p>
+        Functions are the heart and soul of JavaScript developers. Everything
+        that a modern application does is done in a function. An application can
+        have hundreds, possibly thousands, of tasks that it must perform to
+        solve a problem or provide a service to humans. Each one of those tasks
+        is in a function.
+      </p>
+      <p>
+        <b
+          >You can think of a function as a container for code that completes a
+          specific task.</b
+        >
+      </p>
+      <p>
+        These tasks are referenced with a variable, just like numbers, arrays
+        and objects. Here is the basic syntax of what we call an arrow function.
+        It's a very concise syntax for defining a task.
+      </p>
+      <pre><code>const descriptiveVariable = () => {
+    // Code to perform the task goes here
+}</code></pre>
+      <p>
+        Think of functions like minions that work for you. Each minion is
+        designated a specific task that makes up your life.
+      </p>
+      <ul>
+        <li>Buy groceries</li>
+        <li>Pay bills</li>
+        <li>Prepare meals</li>
+        <li>
+          Do math stuff when you don't want to (<i
+            >which, if we're being honest, is most of the time</i
+          >)
+        </li>
+        <li>Take the car to the repair shop</li>
+      </ul>
+      <h2>Buying Grocery Task</h2>
+      <p>
+        Functions sometimes need to be given information in order to complete
+        the task. Let's look at how you would write task code for a minion that
+        buys groceries.
+      </p>
+      <pre><code>const buyGroceries = () => {
+    // Code to buy groceries with money
+}</code></pre>
+      <p>
+        Since the minions can't read your mind, that means that you must provide
+        it with the list of items you want it to purchase. Otherwise, the minion
+        can't do its job.
+      </p>
+      <p>
+        In a JavaScript function, you specify that input of information with
+        what's called a <b>parameter</b>. Parameters go inside the parenthesis
+        before the arrow. In the code below, the
+        <b>arrayOfFoodToBuy</b> variable is the parameter for the function.
+      </p>
+
+      <p>
+        It is important to note that parameters
+        <b>only work inside the function.</b>
+        The variable that you type inside those parenthesis cannot be used
+        anywhere else in your code. You will be reminded of this fact throughout
+        this series of exercises.
+      </p>
+      <pre><code>// Define the task for a minion
+const buyGroceries = (arrayOfFoodToBuy) => {
+
+    // Code to buy groceries with money
+    for (const food of arrayOfFoodToBuy) {
+        console.log(`I bought ${food}`)
+    }
+}</code></pre>
+      <p>
+        What you have now is a definition of a task. The minion hasn't been told
+        to perform the task yet, though. You need to tell the minion which food
+        to buy, and then direct the minion to start the task.
+      </p>
+      <p>
+        This is called <i><b>invoking</b></i> a function. You type in the name
+        of the task, and then put parenthesis after it. Inside the parenthesis,
+        you provide the information that the minion needs. In this case, it
+        needs an array of food items to buy. Software developers call the values
+        inside those parenthesis <i><b>arguments</b></i
+        >.
+      </p>
+      <pre><code>/*
+    Vocabulary:
+        - <b>buyGroceries</b> is a variable whose value is a function
+        - <b>arrayOfFoodToBuy</b> is a parameter. It can only be used in the function.
+*/
+const buyGroceries = (arrayOfFoodToBuy) => {
+
+    // Code to buy groceries with money
+    for (const food of arrayOfFoodToBuy) {
+        console.log(`I bought ${food}`)
+    }
+}
+
+// Invoke the function. The array of strings is the argument.
+buyGroceries( ["Milk", "Onions", "Ketchup"] )</code></pre>
+      <h2>Practice: Filling the Tank</h2>
+      <p>
+        You have some starter code provided. It's a blank function that defines
+        the task of filling your car up with gas. You can see that the minion
+        will let you know that it filled up the car with gas, but
+        <i><b>you</b></i> need to tell it how much gas you want put into the
+        tank.
+      </p>
+      <p>
+        Since the minion needs information from you to do its job, you need to
+        define the parameter of <b>gallons</b> inside the parenthesis of the
+        function. When you do that successfully, run the code and the minion
+        will let you know when it completes the task.
+      </p>
+      <p>
+        Now change the <i><b>argument</b></i> value. It is currently 15. Change
+        it to any other number and see how the behavior of the function changes
+        when the argument does.
+      </p>
+      <h2>Try it out!</h2>
+      <p>
+        Down below this you'll see two tabs: <b>Console</b> and <b>Problems</b>.
+        We're going to only pay attention to the <b>Console</b> tab for now, so
+        go ahead and open that up and let's start writing some JavaScript! 😄
+      </p>
+      <p>👇👇👇</p>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

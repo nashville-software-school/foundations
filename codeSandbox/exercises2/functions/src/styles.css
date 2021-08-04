@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+h1 {
+  text-decoration: underline;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+}
+#app p,
+ul,
+ol,
+code {
+  font-size: large;
+  margin: 0.5em;
+}
+pre {
+  width: 80%;
+}
+code {
+  display: inline-block;
+  padding: 1rem;
+  border: 2px solid rgb(185, 185, 185);
+  background-color: rgb(235, 235, 235);
+  color: black;
+}
+.string {
+  color: rgb(230, 122, 0);
+}
+.bool {
+  color: rgb(156, 3, 202);
+}
+.number {
+  color: rgb(10, 116, 0);
+}
