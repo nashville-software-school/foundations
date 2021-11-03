@@ -26,7 +26,7 @@ console.log(newRose);
   1. Create an object that describes your pet (or your favorite animal) with the following properties:
     - name
     - age
-    - favoriteColor
+    - breed
   What should the values of those properties be? 🤔
 */
 
@@ -34,7 +34,7 @@ console.log(newRose);
 
 // 3. Log to the console your pets'/animals' age
 
-// 4. Log to the console your pets'/animals' favorite color
+// 4. Log to the console your pets'/animals' breed
 
 /* CHALLENGE: Using dot notation! */
 // 5. Add a property (key-value-pair) called 'isFluffy' and assign its value to a boolean
