@@ -1,13 +1,18 @@
 /*
-    💡 Codesandbox Tips 💡
-    ‣ Hide/Show left panel:
-      Click the cube icon in the top left of this window.
-    ‣ Run your code:
-      Your code will run automatically after you make changes.
-    ‣ View results of running your code:
-      Output will be printed to the console in the bottom right of this window.
-    ‣ Console Errors/Problems:
-      You can ignore any errors that appear while you are still typing.
+  💡 CodeSandbox Tips 💡
+
+  ‣ The First Step:
+    Read through the content displayed in the right panel before you begin the exercises.
+
+  ‣ The Left Panel:
+    Click the cube icon (top left) to hide/show the left panel.
+
+  ‣ The Console:
+    You'll see the output (result) of your code in the console (bottom right)
+
+  ‣ The Errors:
+    If your code produces an error, a red error message will show up in the console.
+    --- NOTE: Ignore any errors produced while you are still typing.
 */
 
 
