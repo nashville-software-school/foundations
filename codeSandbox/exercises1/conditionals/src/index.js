@@ -1,6 +1,18 @@
 /*
-    👉👉 Hit RUN to view the instructions! 👈👈
-  (ignore any errors that may appear until you start coding)
+  💡 CodeSandbox Tips 💡
+
+  ‣ The First Step:
+    Read through the instructions (right panel) before you begin the exercises.
+
+  ‣ The Left Panel:
+    Click the cube icon (top left) to hide/show the left panel.
+
+  ‣ The Console:
+    You'll see the output (result) of your code in the console (bottom right)
+
+  ‣ The Errors:
+    If your code produces an error, a red error message will show up in the console.
+    --- NOTE: Ignore any errors produced while you are still typing.
 */
 
 /*
