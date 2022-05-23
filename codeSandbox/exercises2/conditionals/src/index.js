@@ -1,5 +1,5 @@
 /*
-  💡 CodeSandbox Tips 💡
+  💡 CodeSandbox Tips HAHAHA 💡
 
   ‣ The First Step:
     Read through the content displayed in the right panel before you begin the exercises.
